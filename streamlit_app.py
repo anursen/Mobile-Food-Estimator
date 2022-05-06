@@ -1,11 +1,10 @@
 import streamlit as st
 import numpy as np
-import pandas as pd
 import cv2
-from skimage import io
-
 import streamlit as st
 import os
+from skimage import io
+
 
 filename = st.text_input('Enter a file path:')
 try:
@@ -14,8 +13,6 @@ try:
 except FileNotFoundError:
     st.error('File not found.')
     
-
-
 
 cake_url = filename
 labelmap_url = "https://www.gstatic.com/aihub/tfhub/labelmaps/aiy_food_V1_labelmap.csv"
